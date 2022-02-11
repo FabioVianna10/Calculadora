@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --varbtn: rgb(36, 29, 29);
+  --varbtn-hover: rgba(95, 86, 86, 0.616);
+  --varoperacao: #fff;
+  --varbtn-operacaohover: rgba(255, 255, 255, 0.733);
+  --varbtnespecial: rgb(189, 6, 6);
+  --varbtnespecialhover: rgba(173, 10, 10, 0.897);
+  --varfundo: #b4a196;
+}
+
+body {
+  background-color: var(--varfundo);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 2.5em;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 10px;
+  width: 280px;
+  background-color: #000807;
+  transform: translate(-50 * -50%);
+}
+
+.container {
+  display: flex;
+  border-radius: 25px;
+
+  width: 280px;
+  background-color: #000807;
+}
+
+table td {
+  display: inline-block;
+}
+
+.btn {
+  margin: 3px;
+  padding: 10px;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  transition: all 500ms ease-in-out;
+  background-color: var(--varbtn);
+}
+
+.btn:hover {
+  background-color: var(--varbtn-hover);
+  color: #fff;
+}
+
+.operacao {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 3px;
+  background-color: #fff;
+}
+
+.operacao:hover {
+  background-color: rgba(255, 255, 255, 0.733);
+}
+
+.btnEspecial {
+  cursor: pointer;
+  padding: 10px;
+  margin: 3px;
+  background-color: var(--varbtnespecial);
+  color: #fff;
+}
+
+.btnEspecial:hover {
+  background-color: var(--varbtnespecialhover);
+  color: #fff;
+}
+
+.resultado {
+  height: 100px;
+  color: #9e9e9e;
+  text-align: right;
+  font-size: 35px;
+  word-wrap: break-word;
+  border-bottom: 1px solid #fff;
+}
+
+.powered {
+  text-align: right;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 0.7em;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.powered:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.692);
+}
